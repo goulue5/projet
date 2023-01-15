@@ -4,6 +4,9 @@
 
 package fr.eni.variables;
 
+import java.util.Arrays;
+import java.util.Dictionary;
+import java.util.Hashtable;
 import java.util.Scanner;
 
 /**
@@ -45,5 +48,23 @@ public class Variables {
         String strAplusB = strA + " " + strB;
         System.out.println(strAplusB); 
         // --------------------------------------------------
+        
+        // -------------------liste--------------------------
+        String[] arrStrA = {"a", "b", "c", "d"};
+        int[] arrIntA = {10 , 20, 30, 40};
+        double[] arrDblA = {1.1, 1.2, 1.3, 1.4};
+        System.out.println(arrStrA[0]);
+        System.out.println(arrIntA[0]);
+        System.out.println(arrDblA[0]);
+        
+        int intTailleArrStrA = arrStrA.length;
+        System.out.println(intTailleArrStrA);
+        
+        arrStrA[1] = "e";
+        System.out.println(Arrays.toString(arrStrA));
+        arrDblA[0] = 0;
+        System.out.println(Arrays.toString(arrDblA));
+        // --------------------------------------------------
+        
     }
 }
