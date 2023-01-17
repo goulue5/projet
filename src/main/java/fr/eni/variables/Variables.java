@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class Variables {
 
     public static void main(String[] args) {
+        
         // ---------------------int--------------------------
         int intA = 20;
         int intB = 15;
@@ -48,7 +49,7 @@ public class Variables {
         String strAplusB = strA + " " + strB;
         System.out.println(strAplusB); 
         // --------------------------------------------------
-        
+        repet(intA, strA);
         // -------------------liste--------------------------
         String[] arrStrA = {"a", "b", "c", "d"};
         int[] arrIntA = {10 , 20, 30, 40};
@@ -65,6 +66,23 @@ public class Variables {
         arrDblA[0] = 0;
         System.out.println(Arrays.toString(arrDblA));
         // --------------------------------------------------
-        
+                       
     }
+    
+    public static void repet(int intA, String strA){        
+            for (int counter = 0; counter <= 20; counter++)
+            {
+                System.out.println(strA);
+            }
+            
+            /*
+            i = 0;
+            while (i!=intA)
+            {
+                System.out.println(strA);
+                i++;
+            }
+            */
+        }
+        
 }
